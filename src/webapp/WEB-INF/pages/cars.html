@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список наших машин</title>
+</head>
+<body>
+<div>
+    <h1>Список наших машин</h1>
+    <h2>У вас <span th:text="${countCars}"></span> машин:</h2>
+    <ul>
+        <li th:each="car : ${cars}">
+            <h3 th:text="${car}"></h3>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
