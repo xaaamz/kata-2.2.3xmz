@@ -64,6 +64,7 @@
 </head>
 <body>
 <div class="container">
+    <h1 class="text-center">Изменение пользователя</h1>
     <form action="#" th:action="@{/edit}" th:object="${userForm}" method="post">
         <input hidden="hidden" type="number" th:field="*{id}" id="idAdd" placeholder="id">
         <label for="name">Имя</label>
